@@ -1,5 +1,6 @@
-const calculateMode = (arr) => {
-    let arrObj = {};	
+exports.calculateMode = function(arr) {
+    let arrObj = {};
+    // create object with array elements and number of times they occur	
     for (let i = 0; i < arr.length; i++){	
       if (arrObj[arr[i]] === undefined){	
         arrObj[arr[i]] = 1;	
@@ -23,4 +24,4 @@ const calculateMode = (arr) => {
     }	
     return result;
 }
-console.log(calculateMode([1,2,3,3]))
+//console.log(exports.calculateMode([1,1,2,2]))
